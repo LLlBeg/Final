@@ -12,7 +12,11 @@
 }
 
 .header, .subheader{
-    background: $background_color fixed;
+    background-image: url("../image/Symbol.svg"), linear-gradient(228.57deg,#323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .header {

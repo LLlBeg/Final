@@ -27,6 +27,10 @@ h1 {
   margin: 0 auto;
 }
 
+.idea {
+  padding: 90px 0 64px 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -37,7 +41,11 @@ h1 {
 }
 
 .header, .subheader {
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) fixed;
+  background-image: url("../image/Symbol.svg"), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
