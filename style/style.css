@@ -8,29 +8,6 @@
   src: url(../fonts/Montserrat-Bold.ttf);
   font-weight: 700;
 }
-.subheader {
-  padding: 267px 0 90px 0;
-}
-
-h1 {
-  font-family: "Bold";
-  font-size: 38px;
-  line-height: 46px;
-  text-align: center;
-  color: #FFFFFF;
-  padding-bottom: 305px;
-}
-
-.subheader__item__image {
-  display: block;
-  cursor: pointer;
-  margin: 0 auto;
-}
-
-.idea {
-  padding: 90px 0 64px 0;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -40,10 +17,9 @@ h1 {
   margin: 0 auto;
 }
 
-.header, .subheader {
+.header, .subheader, .idea {
   background-image: url("../image/Symbol.svg"), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: center;
   background-attachment: fixed;
 }
@@ -149,6 +125,33 @@ h1 {
 .header__nav__menu__item__link:focus {
   color: #F0145A;
   text-decoration: underline;
+}
+
+.subheader {
+  padding: 267px 0 90px 0;
+}
+
+h1 {
+  font-family: "Bold";
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 305px;
+}
+
+.subheader__item__image {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.idea {
+  padding: 90px 0 64px 0;
+}
+
+.idea__info {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
