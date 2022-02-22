@@ -1,0 +1,123 @@
+@import 'color.scss';
+@import 'fonts.scss';
+@import 'main.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.header, .subheader{
+    background: $background_color fixed;
+}
+
+.header {
+    padding-top: 50px;
+    display: flex;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav__menu {
+    display: flex;
+    align-items:center;
+}
+
+.header__nav__menu__button {
+    width: 33px;
+    height: 25px;
+    margin-right: 7px;
+    background: $main_color;
+    border-radius: 8px;
+    border: none;
+    font-family: "Bold";
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.header__nav__menu__button:hover {
+    background: $grey_color;
+}
+
+.header__nav__menu__button:focus {
+    background: $accent_color;
+}
+
+.header__nav__menu__image {
+    margin-right: 10px;
+}
+
+.header__nav__menu__adress {
+    font-family: "Regular";
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.header__nav__menu__call {
+    font-family: "Bold";
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.header__nav__menu__link__facebook {
+    display: block;
+}  
+
+.header__nav__menu__link__facebook path {
+    fill-opacity: 0;
+    fill: red;
+    stroke: #B3B3BA;
+    transition: all 0.4s linear;
+}
+  
+.header__nav__menu__link__facebook svg:hover path {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+}
+
+.header__nav__menu__list {
+    display: flex;
+    justify-content: end;
+    margin-top: 18px;
+}
+
+.header__nav__menu__item__link {
+    font-family: "Bold";
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.header__nav__menu__item__link:hover {
+    text-decoration: underline;
+}
+
+.header__nav__menu__item__link:focus {
+    color: $accent_color;
+    text-decoration: underline;
+}
+
+
+
+
