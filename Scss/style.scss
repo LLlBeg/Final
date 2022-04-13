@@ -141,26 +141,23 @@ h1 {
     cursor: pointer;
 }
 
-h1 span
-{
+h1 span {
     transition: 0.5s;
 }
 
-h1:hover span:nth-child(2)
-{
+h1:hover span:nth-child(2) {
     margin-right: 10px;
 }
-h1:hover span:nth-child(2):after
-{
+
+h1:hover span:nth-child(2):after {
     content: "";
 }
 
-h1:hover span:nth-child(3)
-{
+h1:hover span:nth-child(3) {
     margin-left: 40px;
 }
-h1:hover span
-{
+
+h1:hover span {
     color: #fff;
     text-shadow: 0 0 10px black,
                  0 0 20px black,  
@@ -196,6 +193,10 @@ h1:hover span
     text-align: right;
 }
 
+.idea__info__item__menu__list:nth-child(4) {
+    padding-bottom: 0;
+}
+
 .idea__info__item__menu__list__link {
     display: block;
     font-family: 'Bold';
@@ -210,7 +211,6 @@ h1:hover span
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .idea__info__item__title {
@@ -235,8 +235,341 @@ h1:hover span
     margin-right: 60px;
 }
 
+.services {
+    padding: 0 0 60px 0;
+}
+
+.services__text {
+    font-family: 'Regular';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active_color;
+}
+
+.services__text:hover {
+    color: $accent_color;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.services__subtext {
+    font-family: 'Bold';
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-top: 10px;
+}
+
+.services__card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services__card__shell {
+    width: 400px;
+    padding-top: 60px;
+}
+
+.services__card__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 92px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.services__card__title {
+    font-family: 'Bold';
+    font-size: 22px;
+    line-height: 27px;
+    color: $active_color;
+    padding-top: 30px;
+}
+
+.services__card__text {
+    font-family: 'Regular';
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.slideshow {
+    padding: 80px 0 30px 0;
+}
+
+.slideshow__box {
+    display: flex;
+    background: #F5F5FA;
+    border-radius: 12px;
+    height: 344px;
+}
+
+.slideshow__shell {
+    padding-left: 30px;
+}
+
+.slideshow__shell__title {
+    font-family: 'Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active_color;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.slideshow__shell__title:hover {
+    color: $accent_color;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.slideshow__shell__text {
+    font-family: 'Bold';
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 30px;
+}
+
+.slideshow__shell__name {
+    font-family: 'Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey_color;
+    padding-top: 30px;
+}
+
+.slideshow__shell__position {
+    font-family: 'Regular';
+    font-size: 14px;
+    line-height: 22px;
+    color: $grey_color;
+    padding-top: 10px;
+}
+
+.slideshow__spiner {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.slideshow__spiner__dot {
+    text-align: center;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #24a4ff6d;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.slideshow__spiner__dot:hover {
+    background-color: $active_color;
+}
+
+.slideshow__subtitle {
+    font-family: 'Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main_color;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.slideshow_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.publication {
+    padding: 30px 0;
+    background: #F5F5FA;
+}
+
+.publication__title {
+    font-family: 'Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active_color;
+    padding-top: 10px;
+}
+
+.publication__title:hover {
+    color: $accent_color;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.publication__subtitle {
+    font-family: 'Bold';
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.publication__shell {
+    display: flex;
+    justify-content: space-between;
+}
+.publication__shell__box {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    padding-top: 30px;
+}
+
+.publication__shell__box__title {
+    font-family: 'Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: $active_color;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.publication__shell__box__date {
+    font-family: 'Bold';
+    font-size: 12px;
+    line-height: 15px;;
+    text-transform: uppercase;
+    color: $grey_color;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.publication__shell__box__horizontal_line {
+    width: 360px;
+    height: 4px;
+    background: #E6E6F0;
+    border: none;
+    margin-top: 15px;
+}
+
+.publication__shell__box__text {
+    font-family: 'Regular';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.publication__shell__box__horizontal__footer_line {
+    background: #E6E6F0;
+    margin-top: 30px;
+    height: 2px;
+    border: none;
+}
 
 
+.information {
+    padding-bottom: 39px;
+    background: #F5F5FA;
+}
 
+.information__shell {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
 
+.information__shell__box {
+    display: flex;
+    align-items: center;
+}
 
+.information__shell__street {
+    font-family: 'Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+}
+
+.information__shell__image {
+    padding: 0 10px;
+}
+
+.information__shell__map {
+    font-family: 'Bold';
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active_color;
+}
+
+.information__shell__company {
+    font-family: 'Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+}
+
+.information__shell__footer {
+    display: flex;
+    align-items:center;
+    padding-top: 30px;
+}
+
+.information__shell__footer__facebook {
+    display: block;
+}  
+
+.information__shell__footer__facebook path {
+    fill-opacity: 0;
+    fill: red;
+    stroke: #B3B3BA;
+    transition: all 0.4s linear;
+}
+  
+.information__shell__footer__facebook svg:hover path {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+}
+
+.information__shell__footer__call {
+    font-family: 'Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #46466E;
+    text-decoration: none;
+}
+
+.information__shell__footer__mail {
+    font-family: 'Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: $active_color;
+    text-decoration: none;
+}
+
+.information__shell__footer__mail:hover {
+    color: $accent_color;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
